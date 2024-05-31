@@ -38,11 +38,9 @@ def remove_item(inventory, item):
 
 
 def list_inventory(inventory):
-   my_list=[]
-   for i,x in inventory.items():
-    if x > 0:
+    my_list=[]
+    for i,x in inventory.items():
+      if x > 0:
         my_tuple = (i,x)
         my_list.append(my_tuple)
     return my_list
-
-   
